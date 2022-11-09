@@ -19,11 +19,11 @@ Pagination helper method for TypeORM repositories or queryBuilders with strict t
 ## Install
 
 ```bash
-$ yarn add nestjs-typeorm-paginate
+$ yarn add attapornamo-nestjs-typeorm-paginate
 ```
 or
 ```bash
-$ npm i nestjs-typeorm-paginate
+$ npm i attapornamo-nestjs-typeorm-paginate
 ```
 
 > If you're using typeorm^0.2.6 please use nestjs-typeorm-paginate^3.2.0
