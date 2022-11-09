@@ -212,9 +212,11 @@ async function paginateQueryBuilder<T, CustomMetaType = IPaginationMeta>(
     resolveOptions(options);
 
   const promises: [Promise<T[]>, Promise<number> | undefined] = [
-    queryBuilder.take(limit).skip((page - 1) * limit)
-    .cache(cacheOption)
-    .getMany(),
+    queryBuilder
+      .take(limit)
+      .skip((page - 1) * limit)
+      .cache(cacheOption)
+      .getMany(),
     undefined,
   ];
 
